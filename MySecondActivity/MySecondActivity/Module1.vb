@@ -3,7 +3,7 @@
     Sub Main()
         Dim var1 As String = "John"
         Dim var2 As String = "Smith"
-        Dim var3 As Short = 1
+        Dim var3 As Byte = 1
 
         Console.WriteLine("Hello " & var1 & " " & var2 & vbCrLf & "This is my Program Number " & var3)
 
