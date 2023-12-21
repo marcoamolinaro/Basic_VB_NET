@@ -7,9 +7,16 @@ Module Program
         Dim userInput As String
         Console.Write("Enter a number ")
         userInput = Console.ReadLine()
-        Console.WriteLine(userInput)
-        val2 = CDbl(userInput)
-        Console.WriteLine("Soma " & (val1 + val2))
+        Try
+            val2 = CDbl(userInput)
+            Console.WriteLine("Soma " & (val1 + val2))
+        Catch ex As FormatException
+            Console.WriteLine("There is an error format exceptions")
+        Catch ex As Exception
+            Console.WriteLine("There is an error with the input")
+        Finally
+            Console.WriteLine("This is the end")
+        End Try
     End Sub
 End Module
 
