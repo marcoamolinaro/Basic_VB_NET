@@ -2,15 +2,13 @@ Imports System
 
 Module Program
     Sub Main(args As String())
-        ' If you declar fraction integer its will be arrounded up
-        Dim val1 As Integer = 2.5
-        Dim val2 As Integer = 3.5
+        Dim val1 As Single = 2.5
+        Dim val2 As Single = 3.5
         Console.WriteLine("My numerbers are " & val1 & " and " & val2 & "!" &
                           vbCrLf & "The tatal is " & val1 + val2)
 
-        ' So you need to user double for example
-        Dim val3 As Double = 2.5
-        Dim val4 As Double = 3.5
+        Dim val3 As Decimal = 123456789123456789.1234D
+        Dim val4 As Decimal = 0
         Console.WriteLine("My numerbers are " & val3 & " and " & val4 & "!" &
                           vbCrLf & "The tatal is " & val3 + val4)
     End Sub
