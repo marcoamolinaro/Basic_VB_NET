@@ -1,0 +1,5 @@
+*.config
+'My Project'/
+MyFirstProject.vbproj
+bin/
+obj/
